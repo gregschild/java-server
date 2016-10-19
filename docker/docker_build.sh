@@ -11,4 +11,4 @@ popd
 
 echo "Running MYSQL Server"
 
-docker run --name java-server -p 8080:8080 -p 9990:9990 -d java-server:latest
+sudo docker run --name java-server -p 8080:8080 -p 9990:9990 -d java-server:latest
