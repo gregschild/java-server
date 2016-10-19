@@ -5,6 +5,10 @@ docker stop java-server
 docker rm java-server
 set -e
 
+
+cp -r ~/deployments ./java-server/
+rm -rf ./java-server/deployments/.git
+
 pushd ~/java/docker/java-server
 docker build --tag java-server:latest .
 popd
